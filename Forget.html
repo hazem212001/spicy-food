@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>i Forget The Password</title>
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="stylesheet" href="index.html">
+<meta name="viewport" content="width=device-width , initial-scale=1.0">
+<link rel="icon" href="images/icon9.ico"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+<script>
+$(document).ready(function(){
+	$("input").focus(
+	function(){
+	$(this).css("background-color" , "rgb(255, 241, 154)");
+	}
+);
+$("input").blur(
+	function(){
+	$(this).css("background-color" , "white");
+	}
+);
+}
+);
+
+function MyFunction(){
+    var username=document.getElementById('Username').value;
+    if(username===""){
+        alert("Please Enter Your Information!");
+    }
+    else if(confirm("Are You Sure?"))
+	return"OK";
+	else 
+	return"Cancel";
+}
+</script>
+</head>
+<body>
+    <div id="header">
+        <a href="index.html" class="logo"><img src="images/1.png" alt=""></a>
+        <hr id="h">
+        <ul>
+        <li>
+        <a href="index.html">home</a>
+        </li>
+        <li>
+        <a href="about.html">About US</a>
+        </li>
+        <li>
+        <a href="services.html">Services</a>
+        </li>
+        <li>
+        <a href="location.html">Our Locations</a>
+        </li>
+        <li>
+        <a href="contact.html">Contact US</a>
+        </li>
+        <li>
+        <a href="blog.html">Menu</a>
+        </li>
+        </ul>
+    </hr>
+    </div>
+    <hr id="h">
+    <div id="featured">
+        <br>
+        <div class="k">
+            <label style="margin-left: 12px"> Username: </label>
+            <input id="Username" class="name" type="text" width="200" placeholder="Write Your Username">
+            <br><br>
+            <center>
+            <a href="#"><button onclick="MyFunction()">Submit</button></a>
+            </center>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <div id="footer">
+        <div>
+            <p>
+            <b><span>2022 &copy; Spicy Food Restaurants</span><a href="#" >Terms of Service</a> | <a href="#" >Privacy Policy</a></b>
+            </p>
+            <ul>
+            <li id="facebook">
+            <a href="http://www.facebook.com/">facebook</a>
+            </li>
+            <li id="twitter">
+            <a href="http://www.twitter.com/">twitter</a>
+            </li>
+            <li id="googleplus">
+            <a href="http://www.googleplus.com/">googleplus</a>
+            </li>
+            <li id="rss">
+            <a href="#" >rss</a>
+            </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

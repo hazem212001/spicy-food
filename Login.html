@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sign In</title>
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="icon" href="images/icon7.ico"/>
+<link rel="stylesheet" href="index.html">
+<meta name="viewport" content="width=device-width , initial-scale=1.0">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+<script>
+$(document).ready(function(){
+	$("input").focus(
+	function(){
+	$(this).css("background-color" , "rgb(255, 241, 154)");
+	}
+);
+$("input").blur(
+	function(){
+	$(this).css("background-color" , "white");
+	}
+);
+}
+);
+
+function MyFunction(){
+    var email=document.getElementById('Email').value;
+    var password=document.getElementById('Password').value;
+    var radio=document.getElementById('Radio').value;
+    if(email===""||password===""||radio===""){
+        alert("Please Enter Your Information!");
+    }
+    else if(confirm("Are You Sure?"))
+	return"OK";
+	else 
+	return"Cancel";
+}
+</script>
+</head>
+<body>
+    <div id="header">
+        <a href="index.html" class="logo"><img src="images/1.png" alt=""></a>
+        <hr id="h">
+        <ul>
+        <li>
+        <a href="index.html">home</a>
+        </li>
+        <li>
+        <a href="about.html">About US</a>
+        </li>
+        <li>
+        <a href="services.html">Services</a>
+        </li>
+        <li>
+        <a href="location.html">Our Locations</a>
+        </li>
+        <li>
+        <a href="contact.html">Contact US</a>
+        </li>
+        <li>
+        <a href="blog.html">Menu</a>
+        </li>
+        </ul>
+    </hr>
+    </div>
+    <hr id="h">
+    <div id="featured">
+        <br>
+        <div id="d">
+           <P style="color:rgb(255, 196, 0);font-size: 20px;font-weight: bold;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -10px;text-align: center;">
+            Log In To Your Account
+           </P>
+           <label style="margin-left: 12px"> Email </label>
+           <input id="Email" style="width: 300px;margin-top: 5px;" type="text" width="200" placeholder="Write Your Email">
+           <br><br>
+           <label style="margin-left: 10px"> Password </label>
+           <input id="Password" type="password" placeholder="Write Your Password">
+           <br><br>
+           <div style="color:rgb(255, 196, 0);">
+           <input  id="Radio" type="radio" name="gender">Remember Me
+           <a href="Forget.html"><p style="float: right;margin-right: 15px;color:rgb(255, 196, 0);">I forgot the password</p></a>
+           </div>
+           <br><br>
+        <center>
+           <a href="#"><button onclick="MyFunction()"> Login</button></a>
+           <br><br>
+           <a href="create.html"><button style="width:300px;"> Create an Account</button></a>
+           <hr>
+           <br><br>
+           <p style="color:rgb(255, 196, 0);font-size: 20px;font-weight: bold;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin-top: -12px;">Log in via social media</p>
+           <br>
+           <a href="http://www.gmail.com"><img style="border-radius: 25px;"src="images/index4.png" width="50" height="30"></a>
+        </center>
+        </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div>
+            <p>
+            <b><span>2022 &copy; Spicy Food Restaurants</span><a href="#" >Terms of Service</a> | <a href="#" >Privacy Policy</a></b>
+            </p>
+            <ul>
+            <li id="facebook">
+            <a href="http://www.facebook.com/">facebook</a>
+            </li>
+            <li id="twitter">
+            <a href="http://www.twitter.com/">twitter</a>
+            </li>
+            <li id="googleplus">
+            <a href="http://www.googleplus.com/">googleplus</a>
+            </li>
+            <li id="rss">
+            <a href="#" >rss</a>
+            </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

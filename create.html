@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Create an Account</title>
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="stylesheet" href="index.html">
+<link rel="icon" href="images/icon8.ico"/>
+<meta name="viewport" content="width=device-width , initial-scale=1.0">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+<script>
+$(document).ready(function(){
+	$("input").focus(
+	function(){
+	$(this).css("background-color" , "rgb(255, 241, 154)");
+	}
+);
+$("input").blur(
+	function(){
+	$(this).css("background-color" , "white");
+	}
+);
+}
+);
+
+function MyFunction(){
+    var email=document.getElementById('Email').value;
+    var password=document.getElementById('Pass').value;
+    var confirm=document.getElementById('confirm').value;
+    var first=document.getElementById('First Name').value;
+    var last=document.getElementById('Last Name').value;
+    var radio=document.getElementById('Radio').value;
+    var phone=document.getElementById('Phone').value;
+    if(email===""||password===""||confirm===""||radio===""||first===""||last===""||phone===""){
+        alert("Please Enter Your Information!");
+    }
+    else if(confirm("Are You Sure?"))
+	return"OK";
+	else 
+	return"Cancel";
+}
+</script>
+</head>
+<body>
+    <div id="header">
+        <a href="index.html" class="logo"><img src="images/1.png" alt=""></a>
+        <hr id="h">
+        <ul>
+        <li>
+        <a href="index.html">home</a>
+        </li>
+        <li>
+        <a href="about.html">About US</a>
+        </li>
+        <li>
+        <a href="services.html">Services</a>
+        </li>
+        <li>
+        <a href="location.html">Our Locations</a>
+        </li>
+        <li>
+        <a href="contact.html">Contact US</a>
+        </li>
+        <li>
+        <a href="blog.html">Menu</a>
+        </li>
+        </ul>
+    </hr>
+    </div>
+    <hr id="h">
+    <div id="featured">
+        <br>
+        <div id="d">
+            <label style="margin-left: 12px"> First Name: </label>
+            <input id="First Name" class="name" type="text" width="200" placeholder="Write Your First Name">
+            <br><br>
+            <label style="margin-left: 10px"> Last Name: </label>
+            <input id="Last Name" class="last" type="text" placeholder="Write Your Last Name">
+            <br><br>
+            <label style="margin-left: 12px"> Email: </label>
+            <input id="Email" class="email" type="text" width="200" placeholder="Write Your Email">
+            <br><br>
+            <label style="margin-left: 10px"> Phone Number: </label>
+            <input id="Phone" style="width: 299px;margin-left: 25px;" type="text" placeholder="+20">
+            <br><br>
+            <label style="margin-left: 12px"> Password: </label>
+            <input id="Pass" type="password" width="200" placeholder="Write Your Password">
+            <br><br>
+            <label style="margin-left: 10px"> Confirm Password: </label>
+            <input id="Confirm" class="c" type="password" placeholder="Write Your Password">
+            <br><br>
+            <div style="color: rgb(255, 196, 0);font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+            <input id="Radio" type="radio"><p style="margin-left: 40px;margin-top: -20px;">I agree to the Terms of Use and understand that my information will be used as described in the Fast Food Privacy Policy.</p>
+            </div>
+            <br>
+            <center>
+            <a href="#"><button onclick="MyFunction()">Create Account</button></a>
+            </center>
+        </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div>
+            <p>
+            <b><span>2022 &copy; Spicy Food Restaurants</span><a href="#" >Terms of Service</a> | <a href="#" >Privacy Policy</a></b>
+            </p>
+            <ul>
+            <li id="facebook">
+            <a href="http://www.facebook.com/">facebook</a>
+            </li>
+            <li id="twitter">
+            <a href="http://www.twitter.com/">twitter</a>
+            </li>
+            <li id="googleplus">
+            <a href="http://www.googleplus.com/">googleplus</a>
+            </li>
+            <li id="rss">
+            <a href="#" >rss</a>
+            </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
