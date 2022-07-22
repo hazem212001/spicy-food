@@ -973,6 +973,29 @@ button:hover{
     transition: 0.4s;
     margin-bottom: 5px;
 }
+#Menu{
+    display: none;
+    position: relative;
+    appearance: none;
+    border: none;
+    outline: none;
+    background:none;
+    cursor: pointer;
+    user-select: none;
+	float: right;
+	margin-top: -72px;
+	padding-left: 80px;
+}
+#Menu span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    background-color: #000;
+    border-radius: 6px;
+    transform-origin: 0 0;
+    transition: 0.4s;
+    margin-bottom: 5px;
+}
 #menu.is-active span:nth-child(1){
     transform: translate(0px , -2px) rotate(45deg);
 }
@@ -984,6 +1007,19 @@ button:hover{
     transform: translate(-3px , 3px) rotate(-45deg);
 }
 #menu.is-active span{
+    background-color: #000;
+}
+#Menu.is-active span:nth-child(1){
+    transform: translate(0px , -2px) rotate(45deg);
+}
+#Menu.is-active span:nth-child(2){
+    opacity: 0;
+    transform: translateX(15px);
+}
+#Menu.is-active span:nth-child(3){
+    transform: translate(-3px , 3px) rotate(-45deg);
+}
+#Menu.is-active span{
     background-color: #000;
 }
 
@@ -1073,6 +1109,9 @@ body {
 	display: none;
 }
 #menu{
+	display: block;
+}
+#Menu{
 	display: block;
 }
 #section{
