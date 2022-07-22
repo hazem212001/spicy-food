@@ -1274,12 +1274,12 @@ width: 360px;
     margin: 0;
     padding: 0 0 12px;
     text-transform: capitalize;
-	margin-left: 120px;
+	margin-left: 130px;
 }
 #body ul li .figure img {
     width: 218px;
     height: 222px;
-    margin-left: 60px;
+    margin-left: 70px;
 }
 #body > ul > li:first-child {
     border: 0;
