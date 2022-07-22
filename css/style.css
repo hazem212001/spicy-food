@@ -1190,8 +1190,9 @@ body {
 	display: none;
 }
 #body .content img{
-	width: 330px;
+	width: 350px;
     height: 250px;
+	margin-top: 70px;
 }
 #body .content h2 {
     text-align: center;
