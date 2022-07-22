@@ -1121,6 +1121,11 @@ body {
 	height: 656px;
     
 }
+#body .content .section {
+    margin: 0;
+    overflow: hidden;
+    padding: 10px 10px 0;
+}
 #section div div {
     background: url(../images/bg-heading.png) repeat;
     height: 380px;
