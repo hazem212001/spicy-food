@@ -1190,9 +1190,10 @@ body {
 	display: none;
 }
 #body .content img{
-	width: 360px;
+	width: 380px;
     height: 250px;
 	margin-top: 70px;
+	    margin-left: 10px;
 }
 #body .content h2 {
     text-align: center;
@@ -1271,11 +1272,6 @@ body {
 }
 #body .content .section div:first-child {
     margin-left: 57px;
-}
-#body .content img {
-    width: 340px;
-    height: 250px;
-    margin-left: -4px;
 }
 #body .content .section div {
     margin-left: 57px;
