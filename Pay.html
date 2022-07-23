@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Payment</title>
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<meta name="viewport" content="width=device-width , initial-scale=1.0">
+<link rel="stylesheet" href="index.html">
+<link rel="icon" href="images/icon6.ico"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+<script>
+$(document).ready(function(){
+	$("input").focus(
+	function(){
+	$(this).css("background-color" , "rgb(255, 241, 154)");
+	}
+);
+$("input").blur(
+	function(){
+	$(this).css("background-color" , "white");
+	}
+);
+}
+);
+function MyFunction(){
+    var name=document.getElementById('Name').value;
+    var email=document.getElementById('Email').value;
+    var address=document.getElementById('Address').value;
+    var city=document.getElementById('City').value;
+    var state=document.getElementById('State').value;
+    var zip=document.getElementById('Zip').value;
+    var exp=document.getElementById('Exp').value;
+    var cvv=document.getElementById('Cvv').value;
+    var x=document.getElementById('name').value;
+    var ccn=document.getElementById('Ccn').value;
+    var y=document.getElementById('exp').value;
+    var radio=document.getElementById('Radio').value;
+    if(name===""||email===""||address===""||city===""||state===""||zip===""||exp===""||cvv===""||x===""||y===""||ccn===""||radio===""){
+        alert("Please Enter The Required Bank Information!");
+    }
+    else if(confirm("Are You Sure?"))
+	return"OK";
+	else 
+	return"Cancel";
+
+}
+</script>
+</head>
+<body>
+    <div id="header">
+        <a href="index.html" class="logo"><img src="images/1.png" alt=""></a>
+        <hr id="h">
+        <nav>
+        <ul id="actions">
+        <li>
+        <a href="index.html">home</a>
+        </li>
+        <li>
+        <a href="about.html">About US</a>
+        </li>
+        <li>
+        <a href="services.html">Services</a>
+        </li>
+        <li>
+        <a href="location.html">Our Locations</a>
+        </li>
+        <li>
+        <a href="contact.html">Contact US</a>
+        </li>
+        <li>
+        <a href="blog.html">Menu</a>
+        </li>
+        </ul>
+        <button id="Menu" class="z">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+    </hr>
+    </div>
+    <hr>
+    <div id="featured">
+        <br>
+        <div class="pay">
+        <div id="bar">
+            <h1 style="margin-left: 20px;margin-bottom: 28px">Billing Address</h1>
+            <img src="images/index28.png" width="20" height="15">
+            <label> Full Name </label>
+            <br><br>
+            <input id="Name"name="full name" type="text" placeholder="Hazem Mohamed" style="width:300px">
+            <br><br>
+            <img src="images/index33.png" width="20" height="15">
+            <label> Email </label>
+            <br><br>
+            <input id="Email" name="email" type="text" placeholder="h5@email.com" style="width:300px">
+            <br><br>
+            <img src="images/index30.png" width="20" height="15">
+            <label> Address </label>
+            <br><br>
+            <input id="Address" name="address" type="text" placeholder="542 W. 15th Street" style="width:300px">
+            <br><br>
+            <img src="images/index31.png" width="20" height="15">
+            <label> City </label>
+            <br><br>
+            <input id="City" name="city" type="text" placeholder="Cairo" style="width:300px">
+            <br><br><br><br>
+        </div>
+        <div id="bar1">
+            <h1>Payment</h1>
+            <h3>Accepted Cards</h3>
+            <img src="images/index32.png" width="150" height="40" style="margin-left: -1px" id="IMG10">
+            <br><br>
+            <label> Name Of Card </label>
+            <br><br>
+            <input id="name" name="name" type="text" placeholder=" 1111-2222-3333-4444" style="width:300px;margin-left: -1px">
+            <br><br>
+            <label> Credit Card Number </label>
+            <br><br>
+            <input id="Ccn" name="CCN" type="text" placeholder="352" style="width:300px;margin-left: -1px">
+            <br><br>
+            <label> Exp Month </label>
+            <br><br>
+            <input id="exp" name="exp month" type="text" placeholder="Novamber">
+            <br>
+            <div id="bar3">
+                <label id="y"> State </label>
+                <input id="State"style="width: 110px" name="ny" type="text" placeholder="NY">
+                <label id="y"> Zip </label>
+                <input id="Zip" style="width: 110px" name="zip" type="text" placeholder="100001">
+                <label id="y"> Exp Year </label>
+                <input id="Exp" style="width: 110px" name="exp year" type="text" placeholder="2021">
+                <label id="y"> CVV </label>
+                <input id="Cvv"style="width: 110px" name="cvv" type="text" placeholder="352">
+            </div>
+        </div>
+
+        <div id="bar2">
+            <br><br>
+            <input id="Radio" type="radio" name="gender"> I Agree With A Of The Above.
+            <br><br>
+           <a href="#" ><center><button onclick="MyFunction()">Pay</button></center></div></a>
+        </div>
+    </div>
+    </div>
+    <div id="footer">
+        <div>
+            <p>
+            <b><span>2022 &copy; Spicy Food Restaurants</span><a href="#" >Terms of Service</a> | <a href="#" >Privacy Policy</a></b>
+            </p>
+            <ul>
+            <li id="facebook">
+            <a href="http://www.facebook.com/">facebook</a>
+            </li>
+            <li id="twitter">
+            <a href="http://www.twitter.com/">twitter</a>
+            </li>
+            <li id="googleplus">
+            <a href="http://www.googleplus.com/">googleplus</a>
+            </li>
+            <li id="rss">
+            <a href="#" >rss</a>
+            </li>
+            </ul>
+        </div>
+    </div>
+    <script src="Script1.js"></script>
+</body>
+</html>
